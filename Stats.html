@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSE 3901 Project-3</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+  </head>
+  <body>
+      <div class="header" style="margin-bottom:25px">
+          <h1>OSU Facts</h1>
+          <input type="text" placeholder="Search..."></div><div class="slider-item"><h2>Enrollment</h2></div><table class ="table" id="enrollment_table"<tbody>
+            
+              
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td>Columbus Campus </td>
+			<td> </td>
+			<td> </td>
+			<td>Total University</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td><strong>Total</strong></td>
+			<td> </td>
+			<td><strong>                    61,677</strong></td>
+			<td><strong>     </strong></td>
+			<td><strong>     </strong></td>
+			<td><strong>             67,772</strong></td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>By Gender</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>    Men</td>
+			<td> </td>
+			<td>                    29,739</td>
+			<td> </td>
+			<td> </td>
+			<td>             32,622</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>    Women</td>
+			<td> </td>
+			<td>                     31,938</td>
+			<td> </td>
+			<td> </td>
+			<td>              35,150</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>By Level</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>    Undergraduate</td>
+			<td> </td>
+			<td>                     47,106</td>
+			<td> </td>
+			<td> </td>
+			<td>             53,189</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>    Graduate</td>
+			<td> </td>
+			<td>                     11,266</td>
+			<td> </td>
+			<td> </td>
+			<td>               11,278</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>    Professional</td>
+			<td> </td>
+			<td>                      3,305</td>
+			<td> </td>
+			<td> </td>
+			<td>               3,305</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>By Residency</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>    Resident</td>
+			<td> </td>
+			<td>                    43,190</td>
+			<td> </td>
+			<td> </td>
+			<td>             49,233</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>    Non-Resident</td>
+			<td> </td>
+			<td>                     18,487</td>
+			<td> </td>
+			<td> </td>
+			<td>              18,539</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>    Foreign</td>
+			<td> </td>
+			<td>                      5,583</td>
+			<td> </td>
+			<td> </td>
+			<td>               5,596</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Student with Disabilities*</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>                4,627</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td>Veterans &amp; Service Members</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td>                 2,114</td>
+			<td> </td>
+		</tr>
+	</tbody><tbody>
+		<tr>
+			<td> </td>
+			<td>       Columbus Campus</td>
+			<td> </td>
+			<td>           Total University</td>
+			<td> </td>
+		</tr>
+		<tr>
+			<td><strong>Total Enrollment</strong></td>
+			<td><strong>61,677</strong></td>
+			<td><strong>% of Total           </strong></td>
+			<td><strong>67,772</strong></td>
+			<td><strong>% of Total</strong></td>
+		</tr>
+		<tr>
+			<td>Total Minorities</td>
+			<td>15,472</td>
+			<td>25.1%</td>
+			<td>17,019</td>
+			<td>25.1%</td>
+		</tr>
+		<tr>
+			<td>African Americans</td>
+			<td>4,526</td>
+			<td>7.3%</td>
+			<td>5,238</td>
+			<td>7.7%</td>
+		</tr>
+		<tr>
+			<td>Asian Americans</td>
+			<td>4,963</td>
+			<td>8.0%</td>
+			<td>5,222</td>
+			<td>7.7%</td>
+		</tr>
+		<tr>
+			<td>Hispanics</td>
+			<td>3,391</td>
+			<td>5.5%</td>
+			<td>3,669</td>
+			<td>5.4%</td>
+		</tr>
+		<tr>
+			<td>Two or More Races</td>
+			<td>2,520</td>
+			<td>4.1%</td>
+			<td>2,807</td>
+			<td>4.1%</td>
+		</tr>
+		<tr>
+			<td>American Indian/Alaskan Native  </td>
+			<td>42</td>
+			<td>0.1%</td>
+			<td>49</td>
+			<td>0.1%</td>
+		</tr>
+		<tr>
+			<td>Native Hawaiian/Pacific</td>
+			<td>30</td>
+			<td>0.05%</td>
+			<td>34</td>
+			<td>0.05%</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id="gender"></canvas></div><div class="chart"><canvas id="level"></canvas></div><div class="chart"><canvas id="race"></canvas></div><script>var enr = document.getElementById(enrollment_table);window.onload = function () {
+    var gender = new CanvasJS.Chart("chartContainer", {
+    title: {
+      text: "Gender by Campus"
+    },
+    data: [{
+      type: "pie",
+      yValueFormatString: "##0.00\"%\"",
+      indexLabel: "{label} {y}",
+      dataPoints: [
+        
+      ]
+    }]
+  });
+  
+  gender.render();
+  }<div id="chartContainer" style="height: 370px; width: 100%;"></div>window.onload = function () {
+    var level = new CanvasJS.Chart("chartContainer", {
+    title:{
+      text: "Enrollment by Level"
+    },
+    axisY: {
+      title: "Students Enrolled",
+      includeZero: true
+    },
+    legend: {
+      cursor:"pointer",
+      itemclick : toggleDataSeries
+    },
+    toolTip: {
+      shared: true,
+      content: toolTipFormatter
+    },
+    data: [{
+      type: "column",
+      showInLegend: true,
+      name: "Undergraduate",
+      color: "red",
+      dataPoints: [
+        {y: 300878, label: "Columbus Campus" },
+			  { y: 266455,  label: "Total" }
+      ]
+    },
+    {
+      type: "column",
+      showInLegend: true,
+      name: "Graduate",
+      color: "gray",
+      dataPoints: [
+        {y: 300878, label: "Columbus Campus" },
+			  { y: 266455,  label: "Total" }
+      ]
+    },
+    {
+      type: "column",
+      showInLegend: true,
+      name: "Professional",
+      color: "black",
+      dataPoints: [
+        { y: 300878, label: "Columbus Campus" },
+			  { y: 266455,  label: "Total" }
+      ]
+    }]
+  });
+  
+  level.render();
+  }window.onload = function () {
+    var residency = new CanvasJS.Chart("chartContainer", {
+    title:{
+      text: "Enrollment by Residency"
+    },
+    axisY: {
+      title: "Students Enrolled",
+      includeZero: true
+    },
+    legend: {
+      cursor:"pointer",
+      itemclick : toggleDataSeries
+    },
+    toolTip: {
+      shared: true,
+      content: toolTipFormatter
+    },
+    data: [{
+      type: "column",
+      showInLegend: true,
+      name: "Resident",
+      color: "red",
+      dataPoints: [
+        {y: 300878, label: "Columbus Campus" },
+			  { y: 266455,  label: "Total" }
+      ]
+    },
+    {
+      type: "column",
+      showInLegend: true,
+      name: "Non-Resident",
+      color: "gray",
+      dataPoints: [
+        {y: 300878, label: "Columbus Campus" },
+			  { y: 266455,  label: "Total" }
+      ]
+    },
+    {
+      type: "column",
+      showInLegend: true,
+      name: "Professional",
+      color: "Foreign",
+      dataPoints: [
+        { y: 300878, label: "Columbus Campus" },
+			  { y: 266455,  label: "Total" }
+      ]
+    }]
+  });
+  residency.render();
+  }window.onload = function () {
+    var race = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    title:{
+      text: "Enrollment by Race"
+    },
+    axisY: {
+      suffix: "%"
+    },
+    toolTip: {
+      shared: true
+    },
+    legend: {
+      reversed: true,
+      verticalAlign: "center",
+      horizontalAlign: "right"
+    },
+    data: [{
+      type: "stackedColumn100",
+      name: "White",
+      showInLegend: true,
+      dataPoints: [
+        {x: "Columbus campus", y: .257},
+        {x: "Total University", y: .257},
+      ]
+    }, 
+    {
+      type: "stackedColumn100",
+      name: "African Americans",
+      showInLegend: true,
+      dataPoints: [
+        {x: "Columbus campus", y: .257},
+        {x: "Total University", y: .257},
+      ]
+    }, 
+    {
+      type: "stackedColumn100",
+      name: "Asian Americans",
+      showInLegend: true,
+      dataPoints: [
+        {x: "Columbus campus", y: .257},
+        {x: "Total University", y: .257},
+      ]
+    },
+    {
+      type: "stackedColumn100",
+      name: "Hispanics",
+      showInLegend: true,
+      dataPoints: [
+        {x: "Columbus campus", y: .257},
+        {x: "Total University", y: .257},
+      ]
+    },
+    {
+      type: "stackedColumn100",
+      name: "Two or More Races",
+      showInLegend: true,
+      dataPoints: [
+        {x: "Columbus campus", y: .257},
+        {x: "Total University", y: .257},
+      ]
+    },
+    {
+      type: "stackedColumn100",
+      name: "American Indian/Alaskan Native",
+      showInLegend: true,
+      dataPoints: [
+        {x: "Columbus campus", y: .257},
+        {x: "Total University", y: .257},
+      ]
+    },
+    {
+      type: "stackedColumn100",
+      name: "Native Hawaiian/Pacific",
+      showInLegend: true,
+      dataPoints: [
+        {x: "Columbus campus", y: .257},
+        {x: "Total University", y: .257},
+      ]
+    },]
+  });
+  race.render();
+  }</script><div class="slider-item"><h2>Academic Structure</h2></div><table class ="table" id="AcademicStructure_table"<tbody>
+		<tr>
+			<td>Colleges</td>
+			<td>       15</td>
+		</tr>
+		<tr>
+			<td>Undergraduate majors</td>
+			<td> &gt;200*</td>
+		</tr>
+		<tr>
+			<td>Master's degree programs</td>
+			<td>     162</td>
+		</tr>
+		<tr>
+			<td>Doctoral degree programs</td>
+			<td>     104</td>
+		</tr>
+		<tr>
+			<td>Professional degree programs      </td>
+			<td>         9</td>
+		</tr>
+		<tr>
+			<td>Courses (estimated)</td>
+			<td>12,000</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Tuition and Fees</h2></div><table class ="table" id="tuitionAndFees_table"<tbody>
+		<tr>
+			<td> </td>
+			<td>     <strong>Semester</strong>
+</td>
+			<td>             <strong>Annual</strong>
+</td>
+		</tr>
+		<tr>
+			<td>Ohio undergraduate (Columbus, new)*</td>
+			<td>          $5,968</td>
+			<td>               $11,936</td>
+		</tr>
+		<tr>
+			<td>Ohio undergraduate (Regional, new)**</td>
+			<td>           $4,281</td>
+			<td>                $8,562</td>
+		</tr>
+		<tr>
+			<td>Nonresident undergraduate (Columbus, new)*</td>
+			<td>         $17,509</td>
+			<td>               $35,018</td>
+		</tr>
+		<tr>
+			<td>Ohio graduate (Columbus, new)*</td>
+			<td>           $6,212</td>
+			<td>               $12,425</td>
+		</tr>
+		<tr>
+			<td>Nonresident graduate (Columbus, new)*</td>
+			<td>          $19,188</td>
+			<td>               $38,377</td>
+		</tr>
+		<tr>
+			<td>Typical annual cost, all fees***</td>
+			<td> </td>
+			<td>               $29,022</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id="tuition"></canvas></div><script>window.onload = function () {
+  var tuition = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: false,
+	
+	title:{
+		text:"Tuition and Fees"
+	},
+	axisX:{
+		interval: 1
+	data: [{
+		type: "bar",
+		name: "Annual Tuition",
+		color: "red",
+		dataPoints: [
+			{ y: 3, label: "Sweden" }
+		]
+	}]
+});
+tuition.render();
+}</script><div class="slider-item"><h2>Employees</h2></div><table class ="table" id="employees_table"<tbody>
+		<tr>
+			<td> </td>
+			<td>        FTE</td>
+			<td>      Headcount</td>
+		</tr>
+		<tr>
+			<td><strong>Total</strong></td>
+			<td><strong>39,113.10</strong></td>
+			<td><strong>            49,325</strong></td>
+		</tr>
+		<tr>
+			<td>Executives </td>
+			<td>     176.85</td>
+			<td>                 178</td>
+		</tr>
+		<tr>
+			<td>Tenure Track Faculty   </td>
+			<td>  2,750.62</td>
+			<td>              2,767</td>
+		</tr>
+		<tr>
+			<td>Clinical Faculty</td>
+			<td>  2,104.55</td>
+			<td>              2,178</td>
+		</tr>
+		<tr>
+			<td>Research Faculty</td>
+			<td>     100.93</td>
+			<td>                 108</td>
+		</tr>
+		<tr>
+			<td>Associated Faculty</td>
+			<td>  2,184.29</td>
+			<td>              2,759</td>
+		</tr>
+		<tr>
+			<td>Unclassified Staff</td>
+			<td> 17,655.21</td>
+			<td>            18,332</td>
+		</tr>
+		<tr>
+			<td>Classified Staff</td>
+			<td>  2,982.03</td>
+			<td>              3,089</td>
+		</tr>
+		<tr>
+			<td>Unions</td>
+			<td>  5,178.25</td>
+			<td>              5,662</td>
+		</tr>
+		<tr>
+			<td>Post Doctoral</td>
+			<td>     582.75</td>
+			<td>                 583</td>
+		</tr>
+		<tr>
+			<td>Student Employees</td>
+			<td>  5,397.62</td>
+			<td>            13,669</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Research</h2></div><table class ="table" id="research_table"<tbody>
+		<tr>
+			<td><strong>Research Expenditures </strong></td>
+			<td><strong> $1.236 billion</strong></td>
+		</tr>
+		<tr>
+			<td>Federal Research Expenditures   </td>
+			<td>     $581 million</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Endowment</h2></div><table class ="table" id="endowment_table"<tbody>
+		<tr>
+			<td>Market value, as of June 30, 2021</td>
+			<td>                        $6.814 billion</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Budget</h2></div><table class ="table" id="budget_table"<tbody>
+		<tr>
+			<td><strong>Total revenues</strong></td>
+			<td><strong>          $8.7 billion</strong></td>
+		</tr>
+		<tr>
+			<td>Tuition and Fees</td>
+			<td>            $1.3 billion</td>
+		</tr>
+		<tr>
+			<td>State Support</td>
+			<td>         $494 million</td>
+		</tr>
+		<tr>
+			<td>Auxiliary</td>
+			<td>         $408 million</td>
+		</tr>
+		<tr>
+			<td>Health System</td>
+			<td>           $4.5 billion</td>
+		</tr>
+		<tr>
+			<td>Other</td>
+			<td>           $2.0 billion</td>
+		</tr>
+	</tbody><tbody>
+		<tr>
+			<td><strong>Total expenditures</strong></td>
+			<td><strong>     $8.1 billion</strong></td>
+		</tr>
+		<tr>
+			<td>Salaries</td>
+			<td>      $1.7 billion</td>
+		</tr>
+		<tr>
+			<td>Benefits</td>
+			<td>   $459 million</td>
+		</tr>
+		<tr>
+			<td>Financial Aid</td>
+			<td>   $496 million</td>
+		</tr>
+		<tr>
+			<td>Health System</td>
+			<td>     $3.8 billion</td>
+		</tr>
+		<tr>
+			<td>Other</td>
+			<td>      $1.7 billion</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id="budget"></canvas></div><script>window.onload = function () {
+    var budget = new CanvasJS.Chart("chartContainer", {
+    title:{
+      text: "Budget"
+    },	
+    axisY: {
+      title: "Billions of Dollars",
+      titleFontColor: "#4F81BC",
+      lineColor: "#4F81BC",
+      labelFontColor: "#4F81BC",
+      tickColor: "#4F81BC"
+    },
+    legend: {
+      cursor:"pointer",
+      itemclick: toggleDataSeries
+    },
+    data: [{
+      type: "column",
+      name: "Total Revenues",
+      legendText: "Total Revenues (bil)",
+      showInLegend: true, 
+      dataPoints:[
+        { label: "Saudi", y: 266.21 },
+        { label: "Venezuela", y: 302.25 }
+      ]
+    },
+    {
+      type: "column",	
+      name: "Total Expenditures",
+      legendText: "Total Expenditures (bil)",
+      showInLegend: true,
+      dataPoints:[
+        { label: "Saudi", y: 10.46 },
+        { label: "Venezuela", y: 2.27 }
+      ]
+    }]
+  });
+  budget.render();
+}</script><div class="slider-item"><h2>Fund Raising</h2></div><table class ="table" id="fundRaising_table"<tbody>
+		<tr>
+			<td>Donors</td>
+			<td>                  194,633</td>
+		</tr>
+		<tr>
+			<td>Total new activity</td>
+			<td>        $576.4 million</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Payroll</h2></div><table class ="table" id="payroll_table"<tbody>
+		<tr>
+			<td>For all employees</td>
+			<td>                 $3.154 billion</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Acreage</h2></div><table class ="table" id="acreage_table"<tbody>
+		<tr>
+			<td><strong>Total</strong></td>
+			<td><strong>      16,147</strong></td>
+		</tr>
+		<tr>
+			<td>Columbus Campus</td>
+			<td>        1,693</td>
+		</tr>
+		<tr>
+			<td>Lima, Mansfield, Marion, Newark Campuses</td>
+			<td>        1,481</td>
+		</tr>
+		<tr>
+			<td>Wooster (OARDC &amp;ATI)</td>
+			<td>       8,663</td>
+		</tr>
+		<tr>
+			<td>Molly Caren Agricultural Center</td>
+			<td>       2,092</td>
+		</tr>
+		<tr>
+			<td>Don Scott Airport</td>
+			<td>        1,338</td>
+		</tr>
+		<tr>
+			<td>Golf Courses</td>
+			<td>          485</td>
+		</tr>
+		<tr>
+			<td>Miscellaneous - Satellite</td>
+			<td>          394</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Buildings</h2></div><table class ="table" id="buildings_table"<tbody>
+		<tr>
+			<td><strong>Total </strong></td>
+			<td><strong> 1,355</strong></td>
+		</tr>
+		<tr>
+			<td>Columbus Campus (Franklin County</td>
+			<td>   630</td>
+		</tr>
+		<tr>
+			<td>Lima, Mansfield, Marion, Newark Campuses</td>
+			<td>     89</td>
+		</tr>
+		<tr>
+			<td>Wooster (OARDC &amp; ATI)</td>
+			<td>   285</td>
+		</tr>
+		<tr>
+			<td>Satellite - Columbus Campus (Non-Franklin County)       </td>
+			<td>   351</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id="buildings"></canvas></div><script>window.onload = function () {
+    var buildings = new CanvasJS.Chart("chartContainer", {
+    title:{
+      text: "Buildings",
+      fontFamily: "arial black",
+      fontColor: "#695A42"
+    },
+    axisY:{
+      valueFormatString:"$#0bn",
+      gridColor: "#B6B1A8",
+      tickColor: "#B6B1A8"
+    },
+    toolTip: {
+      shared: true,
+      content: toolTipContent
+    },
+    data: [{
+      type: "stackedColumn",
+      showInLegend: true,
+      color: "#696661",
+      dataPoints: [
+        { y: 6.75, x: new Date(2010,0) },
+        { y: 8.57, x: new Date(2011,0) }
+      ]
+    }]
+  });
+  buildings.render();
+}</script><div class="slider-item"><h2>Administration</h2></div><table class ="table" id="administration_table"<tbody>
+		<tr>
+			<td>Kristina M. Johnson</td>
+			<td>                                                       President</td>
+		</tr>
+		<tr>
+			<td>Melissa L. Gilliam </td>
+			<td>          Executive Vice President and Provost</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Trustees</h2></div><table class ="table" id="trustees_table"<tbody>
+		<tr>
+			<td>Gary R. Heminger, Chair</td>
+			<td>2027</td>
+		</tr>
+		<tr>
+			<td>Abigail S. Wexner, Vice Chair</td>
+			<td>2023</td>
+		</tr>
+		<tr>
+			<td>Brent R. Porteus</td>
+			<td>2022</td>
+		</tr>
+		<tr>
+			<td>Erin P. Hoeflinger</td>
+			<td>2022</td>
+		</tr>
+		<tr>
+			<td>Alex R. Fischer</td>
+			<td>2023</td>
+		</tr>
+		<tr>
+			<td>Hiroyuki Fujita</td>
+			<td>2024</td>
+		</tr>
+		<tr>
+			<td>Alan A. Stockmeister</td>
+			<td>2025</td>
+		</tr>
+		<tr>
+			<td>John W. Zeiger</td>
+			<td>2026</td>
+		</tr>
+		<tr>
+			<td>Elizabeth P. Kessler</td>
+			<td>2027</td>
+		</tr>
+		<tr>
+			<td>Lewis Von Thaer</td>
+			<td>2028</td>
+		</tr>
+		<tr>
+			<td>Jeff M.S. Kaplan</td>
+			<td>2028</td>
+		</tr>
+		<tr>
+			<td>Elizabeth A. Harsh</td>
+			<td>2029</td>
+		</tr>
+		<tr>
+			<td>Reginald A. Wilkinson</td>
+			<td>2029</td>
+		</tr>
+		<tr>
+			<td>Michael F. Kiggin</td>
+			<td>2030</td>
+		</tr>
+		<tr>
+			<td>Tom B. Mitevski</td>
+			<td>2030</td>
+		</tr>
+		<tr>
+			<td>Tanner R. Hunt, Undergraduate Member       </td>
+			<td>2023</td>
+		</tr>
+		<tr>
+			<td>Carly G. Sobol, Graduate Member</td>
+			<td>2022</td>
+		</tr>
+		<tr>
+			<td>James D. Klingbeil, Charter Trustee</td>
+			<td>2024</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script><div class="slider-item"><h2>Historical Information</h2></div><table class ="table" id="historicalInformation_table"<tbody>
+		<tr>
+			<td>Established by Legislature</td>
+			<td>      1870</td>
+		</tr>
+		<tr>
+			<td>First classes taught</td>
+			<td>      1873</td>
+		</tr>
+		<tr>
+			<td>Received present name</td>
+			<td>      1878</td>
+		</tr>
+		<tr>
+			<td>First graduating class</td>
+			<td>      1878</td>
+		</tr>
+		<tr>
+			<td>Degrees granted (through Spring 2021)        </td>
+			<td> 817,063</td>
+		</tr>
+	</tbody></table><div class="chart"><canvas id=""></canvas></div><script></script></body></html>

@@ -1,0 +1,17 @@
+current directory: /home/runner/Lab-3/.bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+/nix/store/g2n4v2lhxgq5kvk8m4aqc79agjrajj57-ruby-2.7.6/bin/ruby -I /nix/store/g2n4v2lhxgq5kvk8m4aqc79agjrajj57-ruby-2.7.6/lib/ruby/2.7.0 extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/runner/Lab-3/.bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230223-845-qyc3qd sitelibdir\=./.gem.20230223-845-qyc3qd clean
+
+current directory: /home/runner/Lab-3/.bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230223-845-qyc3qd sitelibdir\=./.gem.20230223-845-qyc3qd
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/runner/Lab-3/.bundle/ruby/2.7.0/gems/racc-1.6.2/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20230223-845-qyc3qd sitelibdir\=./.gem.20230223-845-qyc3qd install
+install -c -p -m 755 cparse.so ./.gem.20230223-845-qyc3qd/racc

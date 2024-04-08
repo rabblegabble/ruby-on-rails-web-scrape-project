@@ -1,0 +1,16 @@
+current directory: /home/runner/Lab-3/.bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+/nix/store/g2n4v2lhxgq5kvk8m4aqc79agjrajj57-ruby-2.7.6/bin/ruby -I /nix/store/g2n4v2lhxgq5kvk8m4aqc79agjrajj57-ruby-2.7.6/lib/ruby/2.7.0 extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/runner/Lab-3/.bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230223-845-frxhgk sitelibdir\=./.gem.20230223-845-frxhgk clean
+
+current directory: /home/runner/Lab-3/.bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230223-845-frxhgk sitelibdir\=./.gem.20230223-845-frxhgk
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: /home/runner/Lab-3/.bundle/ruby/2.7.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20230223-845-frxhgk sitelibdir\=./.gem.20230223-845-frxhgk install
+install -c -p -m 755 unf_ext.so ./.gem.20230223-845-frxhgk
